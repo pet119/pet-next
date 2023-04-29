@@ -22,12 +22,24 @@ function LogIn() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Username</label>
-                <input type="text" id="username" name="username" style={{color: 'black'}}/>
-                <label htmlFor="password">Password</label>
-                <input type="password" id="password" name="password"style={{color: 'black'}}/>
-                <button type="submit">Log In</button>
+                <div>
+                    <label htmlFor="username">Username</label>
+                    <input className="box" type="text" id="username" name="username" style={{color: 'black'}}/>
+                </div>
+                <div>
+                    <label htmlFor="password">Password</label>
+                    <input className="box" type="password" id="password" name="password"style={{color: 'black'}}/>
+                </div>
+                
+                <button className="box" type="submit">Log In</button>
             </form>
+            <style jsx>{`
+            .box {
+                border: solid
+            }
+            `
+
+            }</style>
         </div>
     );
 }
