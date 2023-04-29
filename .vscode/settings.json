@@ -4,14 +4,15 @@
     // For ESLint
     "source.fixAll.eslint": true
   },
-  // Enable per-language
-  "[typescript]": {
-    // "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    // "editor.formatOnSave": true
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // // Enable per-language
+  // "[typescript]": {
+  //   // "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[json]": {
+  //   // "editor.formatOnSave": true
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
   "workbench.settings.useSplitJSON": true
 }
