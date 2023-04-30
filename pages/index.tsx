@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,12 +17,14 @@ export default function Home() {
       </div>
       <div className="fixed bottom-40 left-0 w-full flex flex-col items-center">
         <Link href="/signup">
-          <button className="btn-primary">시작하기</button>
+          <button type="button" className="btn-primary">
+            시작하기
+          </button>
         </Link>
         <div className="ml-2">
-          이미 계정이 있나요?{" "}
+          이미 계정이 있나요?{' '}
           <Link href="/logIn" className="text-blue-500 underline">
-            <>로그인</>
+            로그인
           </Link>
         </div>
       </div>
