@@ -10,7 +10,8 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:prettier/recommended",
-    "next"
+    "next",
+    "prettier"
   ],
   "settings": {
     "react": {
