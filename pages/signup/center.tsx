@@ -44,63 +44,79 @@ export default function Center() {
   return (
     <div>
       <div>
-        <label htmlFor="email">이메일</label>
-        <input
-          id="email"
-          type="email"
-          placeholder="이메일 입력"
-          {...register('email', { required: true })}
-          className={errors.email ? 'errorStyle' : 'inputStyle'}
-        />
-        {errors.email && (
-          <span id="email-error" role="alert">
-            {errors.email.message}
-          </span>
-        )}
+        <label htmlFor="email">
+          이메일
+          <input
+            id="email"
+            type="email"
+            placeholder="이메일 입력"
+            {...register('email', { required: true })}
+            className={errors.email ? 'errorStyle' : 'inputStyle'}
+          />
+          {errors.email && (
+            <span id="email-error" role="alert">
+              {errors.email.message}
+            </span>
+          )}
+        </label>
       </div>
       <div>
-        <label htmlFor="password">비밀번호</label>
-        <input
-          id="password"
-          type="password"
-          placeholder="비밀번호 입력"
-          {...register('password')}
-          className={errors.email ? 'errorStyle' : 'inputStyle'}
-        />
-        {errors.password && <span>{errors.password.message}</span>}
+        <label htmlFor="password">
+          비밀번호
+          <input
+            id="password"
+            type="password"
+            placeholder="비밀번호 입력"
+            {...register('password')}
+            className={errors.email ? 'errorStyle' : 'inputStyle'}
+          />
+          {errors.password && <span>{errors.password.message}</span>}
+        </label>
       </div>
       <div>
-        <label htmlFor="passwordConfirm">비밀번호 확인</label>
-        <input
-          id="passwordConfirm"
-          type="password"
-          placeholder="비밀번호 확인"
-          {...register('passwordConfirm')}
-          className={errors.email ? 'errorStyle' : 'inputStyle'}
-        />
-        {errors.passwordConfirm && <span>{errors.passwordConfirm.message}</span>}
+        <label htmlFor="passwordConfirm">
+          비밀번호 확인
+          <input
+            id="passwordConfirm"
+            type="password"
+            placeholder="비밀번호 확인"
+            {...register('passwordConfirm')}
+            className={errors.email ? 'errorStyle' : 'inputStyle'}
+          />
+          {errors.passwordConfirm && (
+            <span>{errors.passwordConfirm.message}</span>
+          )}
+        </label>
       </div>
       <div>
-        <label htmlFor="centerName">유기동물센터 명</label>
-        <input
-          id="centerName"
-          placeholder="유기동물센터 명 입력"
-          {...register('centerName', { required: true })}
-          className={errors.email ? 'errorStyle' : 'inputStyle'}
-        />
-        {errors.centerName && <span>{errors.centerName.message}</span>}
+        <label htmlFor="centerName">
+          유기동물센터 명
+          <input
+            id="centerName"
+            placeholder="유기동물센터 명 입력"
+            {...register('centerName', { required: true })}
+            className={errors.email ? 'errorStyle' : 'inputStyle'}
+          />
+          {errors.centerName && <span>{errors.centerName.message}</span>}
+        </label>
       </div>
       <div>
-        <label htmlFor="companyRegistration">사업자등록번호</label>
-        <input
-          id="companyRegistration"
-          placeholder="사업자등록번호 입력"
-          {...register('companyRegistration', { required: true })}
-          className={errors.email ? 'errorStyle' : 'inputStyle'}
-        />
-        {errors.companyRegistration && <span>{errors.companyRegistration.message}</span>}
+        <label htmlFor="companyRegistration">
+          사업자등록번호
+          <input
+            id="companyRegistration"
+            placeholder="사업자등록번호 입력"
+            {...register('companyRegistration', { required: true })}
+            className={errors.email ? 'errorStyle' : 'inputStyle'}
+          />
+          {errors.companyRegistration && (
+            <span>{errors.companyRegistration.message}</span>
+          )}
+        </label>
       </div>
-      <button type="submit" onClick={handleSubmit(onSubmit)}>Submit</button>
+      <button type="submit" onClick={handleSubmit(onSubmit)}>
+        Submit
+      </button>
       <style jsx>{`
         .inputStyle {
           border: 1px solid #ccc;
