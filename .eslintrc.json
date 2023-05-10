@@ -10,7 +10,8 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:prettier/recommended",
-    "next"
+    "next",
+    "prettier"
   ],
   "settings": {
     "react": {
@@ -32,7 +33,10 @@
     "react/jsx-one-expression-per-line": 0,
     "react/no-unescaped-entities": 0,
     "@next/next/no-page-custom-font": 0,
-    "prettier/prettier": ["error", { "endOfLine": "auto" }] // windows-mac End Line Sequence Issue
+    "prettier/prettier": ["error", { "endOfLine": "auto" }], // windows-mac End Line Sequence Issue
+    "react/jsx-props-no-spreading": 0,
+    "no-undef": "warn",
+    "no-unused-vars": "off"
   },
   "globals": {
     "React": "writable"
