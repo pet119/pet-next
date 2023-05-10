@@ -1,5 +1,11 @@
 import React from 'react';
-import NextDocument, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
+import NextDocument, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document';
 
 class MyDocument extends NextDocument {
   static async getInitialProps(ctx: DocumentContext) {
@@ -93,7 +99,10 @@ class MyDocument extends NextDocument {
           <meta name="application-name" content="&nbsp;" />
           <meta name="msapplication-TileColor" content="#FFFFFF" />
           <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-          <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+          <meta
+            name="msapplication-square70x70logo"
+            content="mstile-70x70.png"
+          />
           <meta
             name="msapplication-square150x150logo"
             content="mstile-150x150.png"
