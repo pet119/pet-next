@@ -42,7 +42,6 @@ export default function Center() {
 
   const onSubmit = (data: FormData) => {
     console.log(data);
-    /*main page 로 이동*/
     router.push('/main');
   };
 
