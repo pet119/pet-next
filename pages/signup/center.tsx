@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useRouter } from 'next/router';
-// import Link from 'next/link';
+import Link from 'next/link';
 
 interface FormData {
   email: string;
@@ -119,6 +119,11 @@ export default function Center() {
         </label>
       </div>
       <button type="submit">Submit</button>
+      <Link href="/signup">
+        <button type="button" className="btn-primary">
+          취소
+        </button>
+      </Link>
       <style jsx>{`
         .inputStyle {
           border: 1px solid #ccc;
