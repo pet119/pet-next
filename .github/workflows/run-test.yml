@@ -1,0 +1,40 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+    branches-ignore:
+      - master
+      - staging
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: '[SETUP] Checkout'
+        uses: actions/checkout@v2
+      - name: '[SETUP] Node.js 16'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: '[SETUP] Install dependencies'
+        run: yarn
+      - name: '[TEST] Run linter'
+        run: yarn lint
+
+  build-test:
+    name: Next build test
+    runs-on: ubuntu-latest
+    steps:
+      - name: '[SETUP] Checkout'
+        uses: actions/checkout@v2
+      - name: '[SETUP] Node.js 16'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: '[SETUP] Install dependencies'
+        run: yarn
+      - name: '[TEST] Run build'
+      - run: yarn build
